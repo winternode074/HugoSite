@@ -2,9 +2,7 @@ baseURL = 'https://winternode074.github.io/HugoSite/'
 title = 'HugoSite — тестовий простір'
 defaultContentLanguage = 'uk'
 disableKinds = ['taxonomy', 'term']
-
-[locale]
-  languageCode = 'uk'
+locale = 'uk'
 
 [params]
   description = 'Невеликий тестовий сайт, створений за допомогою Hugo.'
