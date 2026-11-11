@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ .Site.Params.description }}">
+  <title>{{ .Title }}</title>
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+</head>
+<body>
+  <main class="container">
+    <nav class="nav" aria-label="Головна навігація">
+      <a class="brand" href="{{ .RelPermalink }}">HugoSite</a>
+      <span class="tag">Тестовий простір</span>
+    </nav>
+
+    <section class="hero">
+      <p class="eyebrow">ВІТАЄМО</p>
+      <h1>{{ .Title }}</h1>
+      <p class="lead">{{ .Params.description }}</p>
+      <a class="button" href="#про-сайт">Дізнатися більше <span>↓</span></a>
+    </section>
+
+    <section id="про-сайт" class="content-grid">
+      <article class="card card-text">
+        {{ .Content }}
+      </article>
+      <figure class="card image-card">
+        <img src="{{ "images/sfera-neuralna.png" | relURL }}" alt="Кіберпанкова нейронна сфера">
+        <figcaption>Візуальний експеримент HugoSite</figcaption>
+      </figure>
+    </section>
+
+    <footer>Створено з Hugo · 2026</footer>
+  </main>
+</body>
+</html>
